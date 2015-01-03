@@ -58,7 +58,7 @@ angular.module('todomvc')
 			put: function (todo) {
 				var originalTodos = store.todos.slice(0);
 
-				return $http.put('/todos/' + todo.id, todo)
+				return $http.put('/todos/', todo)
 					.then(function success() {
 						return store.todos;
 					}, function error() {
