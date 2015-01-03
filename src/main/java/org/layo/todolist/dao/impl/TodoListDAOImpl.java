@@ -5,14 +5,14 @@ import org.hibernate.SessionFactory;
 import org.layo.todolist.dao.TodoListDAO;
 import org.layo.todolist.entity.TodoItem;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 /**
  * Created by Layo on 21.12.2014.
  */
-@Service
+@Repository
 public class TodoListDAOImpl implements TodoListDAO {
 
     @Autowired
