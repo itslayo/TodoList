@@ -6,18 +6,18 @@ import javax.persistence.*;
  * Created by Layo on 22.12.2014.
  */
 @Entity
-@Table(name = "TODOITEM")
+@Table(name = "todoitem")
 public class TodoItem {
 
     @Id
     @GeneratedValue
-    @Column(name = "TASK_ID")
+    @Column(name = "task_id")
     private int id;
 
-    @Column(name = "TASK_TITLE")
+    @Column(name = "task_title")
     private String title;
 
-    @Column(name = "TASK_STATUS")
+    @Column(name = "task_status")
     private boolean completed;
 
     public TodoItem() {}
