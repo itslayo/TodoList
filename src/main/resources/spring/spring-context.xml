@@ -15,17 +15,17 @@
         http://www.springframework.org/schema/context
         http://www.springframework.org/schema/context/spring-context-4.0.xsd">
 
-    <tx:annotation-driven />
+    <tx:annotation-driven/>
 
     <context:component-scan base-package="org.layo.todolist.dao.impl"/>
     <context:component-scan base-package="org.layo.todolist.service.impl"/>
 
     <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
           destroy-method="close">
-        <property name="driverClassName" value="com.mysql.jdbc.Driver" />
-        <property name="url" value="jdbc:mysql://localhost:3306/test" />
-        <property name="username" value="root" />
-        <property name="password" value="root" />
+        <property name="driverClassName" value="com.mysql.jdbc.Driver"/>
+        <property name="url" value="jdbc:mysql://localhost:3306/test"/>
+        <property name="username" value="root"/>
+        <property name="password" value="root"/>
     </bean>
 
     <bean id="sessionFactory" class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
@@ -36,7 +36,7 @@
                 <prop key="hibernate.show_sql">true</prop>
             </props>
         </property>
-        <property name="packagesToScan" value="org.layo.todolist.entity" />
+        <property name="packagesToScan" value="org.layo.todolist.entity"/>
     </bean>
 
     <bean id="transactionManager"
